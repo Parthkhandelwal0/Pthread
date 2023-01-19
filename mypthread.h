@@ -9,7 +9,7 @@
 #define _GNU_SOURCE
 
 /* in order to use the built-in Linux pthread library as a control for benchmarking, you have to comment the USE_MYTHREAD macro */
-//#define USE_MYTHREAD 1
+#define USE_MYTHREAD 1
 
 #define QUANTUMTIME 30
 
@@ -30,7 +30,7 @@
 #include <stdbool.h>
 #include <time.h>
 
-typedef uint mypthread_t;
+typedef int mypthread_t;
 
 	/* add important states in a thread control block */
 typedef struct threadControlBlock{
